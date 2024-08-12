@@ -1,9 +1,9 @@
 import React from 'react'
 
-const Main = () => {
+export default function Main(){
   return (
-    <div>Main</div>
+    <div>
+        <img src='mars.webp' a/>
+    </div>
   )
 }
-
-export default Main
