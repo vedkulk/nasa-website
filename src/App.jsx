@@ -4,8 +4,9 @@ import Footer from './components/Footer'
 export default  function App(){
   return (
     <>
-      <Sidebar></Sidebar>
+      
       <Main/>
+      <Sidebar></Sidebar>
       <Footer/>
     </>
   )

@@ -2,8 +2,8 @@ import React from 'react'
 
 export default function Main(){
   return (
-    <div>
-        <img src='mars.webp' a/>
+    <div className='imageContainer'>
+        <img src='mars.webp' alt="Mars pic" className='bgImage'/>
     </div>
   )
 }
