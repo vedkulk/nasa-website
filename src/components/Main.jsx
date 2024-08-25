@@ -1,9 +1,10 @@
 import React from 'react'
 
-export default function Main(){
+export default function Main(props){
+  const {data} = props
   return (
     <div className='imageContainer'>
-        <img src='mars.webp' alt="Mars pic" className='bgImage'/>
+        <img src={data.hdurl} alt={data.title} className='bgImage'/>
     </div>
   )
 }

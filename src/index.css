@@ -19,11 +19,14 @@
   margin: 0;
   box-sizing: border-box;
 }
-.imageContainer{
+.imgContainer {
   display: flex;
   flex-direction: column;
+  max-height: 100vh;
+  width: 100%;
 }
-.bgImage{
+
+.bgImage {
   width: 100%;
   height: 100%;
   flex: 1;
@@ -133,5 +136,24 @@ footer button:hover {
     right: 0;
     left: unset;
     width: 100vw;
+  }
+}
+.loadingState{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+}
+.loadingState i{
+  opacity: 0.2;
+  font-size: 3rem;
+  animation: spin 1s linear infinite;
+}
+@keyframes spin{
+  from{
+    transform: rotate(0deg);
+  }
+  to{
+    transform: rotate(360deg);
   }
 }

@@ -1,20 +1,18 @@
 import React from 'react'
 
 export default  function Sidebar(props){
-  const {showModal, handleDisplayModal} =props
+  const {showModal, handleDisplayModal, data} =props
   return (
     <div className="sidebar">
       <div className="bgOverlay"></div>
       <div className="sidebarContents">
         <h2>
-          Brutal Martian etx
+          {data?.title}
         </h2>
         <div>
-          <p>Decription</p>
+          <p>{data?.date}</p>
           <p>
-            fudisdh
-            fjksddsk
-            fdjksdkh
+          {data?.explanation}
           </p>
         </div>
         <button onClick={handleDisplayModal}>
