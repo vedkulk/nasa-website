@@ -9,7 +9,6 @@ export default  function Footer(props){
             <h1>APOD Project</h1>
             <h2>{data?.title}</h2>
           </div>
-        
         <button onClick={handleDisplayModal}>
           <i className="fa-solid fa-circle-info"></i>
         </button>
